@@ -11,42 +11,49 @@
             text-decoration: none;
         }
         .nav a:hover {
-            color:white;
+            color:$white;
         }
+        .navbar{
         li {
             font-size: 16px;
-            font-weight: bold;
-        }
+            font-weight:$print;
+        }}
         .top-bar {
             padding-top: 20px;
         }
         .jumbotron {
             background-color: inherit;
-            text-align: center;
+            text-align:$location;
             padding-top: 360px;
+            h1{
+                color:$white;
+                font-size: 65px;
+                font-family: Playfair Display;
+            }
         }
-        .jumbotron h1{
-            color:white;
+        /*.jumbotron h1{
+            color:$white;
             font-size: 65px;
             font-family: Playfair Display;
-        }
+        }*/
         .button2 {
             border: 1px solid #2D66F7;
-    border-radius: 34px;
-    padding: 11px;
-    padding-left: 25px;
-    padding-right: 25px;
-    color: white;
-    font-size: 14px;
-    background-color: #2D66F7;
+            border-radius: 34px;
+            padding: 11px;
+            padding-left: 25px;
+            padding-right: 25px;
+            //color:$white;
+            font-size: 14px;
+            background-color: #2D66F7;
         }
         .button2:focus {
             outline: none;
         }
         .button2:hover {
             background-color: inherit;
-            border: 1px solid white;
+            border: 1px solid $white;
         }
         .jumb-button {
-            padding-top: 30px;
+            padding-top:$number;
+            
         }

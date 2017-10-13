@@ -1,8 +1,8 @@
 @import "../../variables";
 .text{
-    color:#666666;
+    color:$grey;
     font-size: 40px;
-    font-weight: bold;
+    font-weight:$print;
     margin:100px 0 50px 0;
 }
 
@@ -21,22 +21,24 @@
 }
 .t3{
     text-align: right;
-    color: #666666;
-    font-weight: bold;
+    color:$grey;
+    font-weight:$print;
     margin-right: 100px;
     margin-bottom: 60px;
 }
 .button1 {
     border: 1px solid #2D66F7;
     border-radius: 34px;
-    padding: 11px;
-    color: #2D66F7;
+    //padding: 11px;
+    //color: #2D66F7;
     font-size: 14px;
-    background-color: white;
+    background-color: $white;
+    
 }
 .button1:hover {
     background-color: #2D66F7;
-    color: white;
+    color:$white;
+    cursor: pointer;
 }
 .button1:focus {
     outline: 0;

@@ -1,0 +1,25 @@
+$grey:#666666;
+$white:#FFFFFF;
+$black:#000;
+$width:340px ;
+$print:bold;
+$location:center;
+$number:30px;
+$color:#2D66F7;
+$padding:11px;
+
+@mixin font-style($color)
+{
+    color:$color;
+
+}
+.t48 {@include font-style($white);}
+.t49 {@include font-style($white);}
+.button1 {@include font-style($color);}
+.button2 {@include font-style($white);}
+
+@mixin padding($padding)
+{
+    padding:$padding;
+}
+.button1 {@include padding($padding);}
