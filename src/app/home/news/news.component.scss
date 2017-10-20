@@ -19,54 +19,53 @@
 
 }
 .t14{
-    width: 80px;
+     width: 80px;
      height: 290px;
      background-color: $white;
      margin-left: 40px;
      margin-top: -1rem; 
      padding-top: 20px;
      padding-left: 25px;
- }
- .t15{
+}
+.t15{
      color: $black;
      font-weight:$print;
      cursor: auto;
      font-family: sans-serif;
      font-size: 21px;
      text-decoration: none;   
- }
- .t16{
+}
+.t16{
      font-family:Helvetica;
      font-weight: bold;
      color: #999999;
      font-size: 11px;
- }
- .t17{
+}
+.t17{
       color: #666;
      font-size: 15px;
      padding-bottom: 20px;
- }
- .t18{
+}
+.t18{
      padding-top: 20px;
      padding-left: 17px;
      
- }
- .button1 {
+}
+.button1 {
     border: 1px solid #2D66F7;
     border-radius: 34px;
-    //padding: 11px;
-    //color: #2D66F7;
     font-size: 14px;
     background-color:$white;
     
-}
-.button1:hover {
+    &:hover {
     background-color: #2D66F7;
     color: $white;
     cursor: pointer;
-}
-.button1:focus {
+    }
+
+    &:focus {
     outline: 0;
+    }
 }
 .fir {
     text-align: $location;

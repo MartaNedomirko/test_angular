@@ -2,10 +2,11 @@
   <div class="col-sm-2 t51">
       <img src="http://warhol.thememountain.com/images/logos/meat-logo-grid.svg">
   </div>
-  <div class="col-sm-2 t50">
-      <img src="http://warhol.thememountain.com/images/logos/rosco-logo-grid.svg">
+  <div class="col-sm-2 t50" *ngFor='let block of footerArray'  >
+      <img src={{block.ImgSrc}}>
   </div>
-  <div class="col-sm-2 t50">
+</div>
+  <!-- <div class="col-sm-2 t50">
       <img src="http://warhol.thememountain.com/images/logos/wicked-logo-grid.svg">
   </div>
   <div class="col-sm-2 t50">
@@ -16,5 +17,4 @@
   </div>
   <div class="col-sm-2 t50">
       <img src="http://warhol.thememountain.com/images/logos/adventure-logo-grid.svg">
-  </div>
-</div>
+  </div> -->

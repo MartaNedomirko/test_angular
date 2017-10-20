@@ -29,17 +29,16 @@
 .button1 {
     border: 1px solid #2D66F7;
     border-radius: 34px;
-    //padding: 11px;
-    //color: #2D66F7;
     font-size: 14px;
     background-color: $white;
     
-}
-.button1:hover {
+    &:hover {
     background-color: #2D66F7;
     color:$white;
     cursor: pointer;
-}
-.button1:focus {
+    }
+
+    &:focus {
     outline: 0;
+    }
 }

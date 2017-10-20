@@ -1,59 +1,65 @@
 @import "../../variables";
-        header {
-            background: url('http://warhol.thememountain.com/images/slider/slide-1-fs.jpg') no-repeat center top / cover;
-            min-height: 947px;
-        }
-        .navbar-brand img {
-            width: 120px;
-        }
-        .nav a {
-            color:darkgray;
-            text-decoration: none;
-        }
-        .nav a:hover {
-            color:$white;
-        }
-        .navbar{
-        li {
-            font-size: 16px;
-            font-weight:$print;
-        }}
-        .top-bar {
-            padding-top: 20px;
-        }
-        .jumbotron {
-            background-color: inherit;
-            text-align:$location;
-            padding-top: 360px;
-            h1{
-                color:$white;
-                font-size: 65px;
-                font-family: Playfair Display;
-            }
-        }
-        /*.jumbotron h1{
-            color:$white;
-            font-size: 65px;
-            font-family: Playfair Display;
-        }*/
-        .button2 {
-            border: 1px solid #2D66F7;
-            border-radius: 34px;
-            padding: 11px;
-            padding-left: 25px;
-            padding-right: 25px;
-            //color:$white;
-            font-size: 14px;
-            background-color: #2D66F7;
-        }
-        .button2:focus {
-            outline: none;
-        }
-        .button2:hover {
-            background-color: inherit;
-            border: 1px solid $white;
-        }
-        .jumb-button {
-            padding-top:$number;
+header {
+   background:url("/assets/images/slide-1-fs.jpg") no-repeat center top / cover;
+   min-height: 947px;
+}
+.navbar-brand img {
+   width: 120px;
+}
+.nav a {
+    color:darkgray;
+    text-decoration: none;
             
-        }
+    &:hover {
+    color:$white;
+    }
+}
+.navbar{
+    li {
+    font-size: 16px;
+    font-weight:$print;
+    }}
+.top-bar {
+    padding-top: 20px;
+}
+.jumbotron {
+     background-color: inherit;
+     text-align:$location;
+     padding-top: 360px;
+      
+     h1{
+     color:$white;
+     font-size: 65px;
+     font-family: Playfair Display;
+     }
+}
+/*.jumbotron h1{
+     color:$white;
+     font-size: 65px;
+     font-family: Playfair Display;
+}*/
+
+.button2 {
+    border: 1px solid #2D66F7;
+    border-radius: 34px;
+    padding: 11px;
+    padding-left: 25px;
+    padding-right: 25px;
+    //color:$white;
+    font-size: 14px;
+    background-color: #2D66F7;
+    cursor: pointer;
+
+    &:focus {
+    outline: none;
+    }
+     
+    &:hover {
+    background-color: transparent;
+    border: 1px solid $white;
+    }
+}
+.jumb-button {
+    padding-top:$number;
+            
+}

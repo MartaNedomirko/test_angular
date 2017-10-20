@@ -9,14 +9,14 @@
                   </div>
                   <div class = "nav-top col-sm-6 col-xs-6">
                      <ul class = "nav navbar">
-                      <li><a href = "#">Demos</a></li>
-                      <li><a href = "#">Pages</a></li>
-                      <li><a href = "#">Folio</a></li>
-                      <li><a href = "#">Blog</a></li>
-                      <li><a href = "#">Shop</a></li>
-                      <li><a href = "#">Elements</a></li>
-                      <li><a href = '#'><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                      <li><a href = "#"><i class="fa fa-search" aria-hidden="true"></i> </a></li>
+                      <li><a routerLink="/">Demos</a></li>
+                      <li><a routerLink="/">Pages</a></li>
+                      <li><a routerLink="/">Folio</a></li>
+                      <li><a [routerLink]="formLink">Blog</a></li>
+                      <li><a [routerLink]="formLink">Shop</a></li>
+                      <li><a [routerLink]="formLink">Elements</a></li>
+                      <li><a routerLink="/"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                      <li><a [routerLink]="formLink"><i class="fa fa-search" aria-hidden="true"></i> </a></li>
                     </ul>
                 </div>
               </nav>

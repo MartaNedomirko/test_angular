@@ -2,12 +2,12 @@
 .t4{
     font-weight:$print;
     font-size: 40px;
-     font-family: Montserrat;
-     padding: 90px 0 20px 0;
-     color:$black;
-     background-color: #F9F9F9;
- }
- .t10{
+    font-family: Montserrat;
+    padding: 90px 0 20px 0;
+    color:$black;
+    background-color:#F9F9F9;
+}
+.t10{
     height: 80px;
     background-color:#F9F9F9;
     width: 300px;
@@ -22,8 +22,6 @@
     background-image: url(/assets/images/11.png);
     width:$width ;
     height: 227px;
-    
-    
 }
 .t42{
     background-image: url(/assets/images/22.png);
@@ -37,7 +35,7 @@
     width:$width;
     height: 227px;
 }
- .t44{
+.t44{
     margin-left: $number;
     position: relative;
     background-image: url(/assets/images/44.png);
@@ -63,10 +61,9 @@
 .t48{
     font-weight:$print;
     padding-top: 80px;
-    //color:$white;
+    padding-left:15px;
 }
 .t49{
     font-family: Playfair Display;
     font-size: 14px;
-    //color:$white;
 }
