@@ -9,6 +9,8 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
   formLink = '/form';
+  stepLink ='/product';
+  
   ngOnInit() {
   }
 

@@ -25,7 +25,10 @@ export class FormComponent implements OnInit {
  
   
   if(username == 'root' && password == 'root') {
-    this.router.navigate(['']);//повертає на home
+    alert ('Hello!');
+  }
+  else {
+    alert ('Error.Try again');
   }
  } 
 
