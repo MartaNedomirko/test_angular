@@ -19,12 +19,12 @@
     <div class="input">
     <div class="isauction">
     <label>Is auction?</label>
-    <input type="checkbox" name='isauction' [(ngModel)]="product.isauction">
+    <input type="checkbox" name='isauction' [(ngModel)]="isauction">
     </div>
     </div>
     </div>
     <div>
-    <div *ngIf="product.isauction" class="input">
+    <div *ngIf="isauction" class="input">
     <label>Start date:</label>
     <div class="datepicker">
     <dp-date-picker name="startdate" [(ngModel)]="product.startdate"></dp-date-picker>
@@ -32,7 +32,7 @@
     </div>
     </div>
     <div>
-    <div *ngIf="product.isauction" class="input">
+    <div *ngIf="isauction" class="input">
     <label>End date:</label>
     <div class="datepicker">
     <dp-date-picker name="enddate" [(ngModel)]="product.enddate"></dp-date-picker>
@@ -40,7 +40,7 @@
     </div>
     </div>
     <div>
-    <div *ngIf="product.isauction" class="input">
+    <div *ngIf="isauction" class="input">
     <label>Start price:</label>
     <input type="number" name='startprice' pattern="[0-9]*" [(ngModel)]="product.startprice">
     <div *ngIf="startprice.errors && (startprice.dirty || startprice.touched)" class="alert alert-danger">
@@ -51,7 +51,7 @@
     </div>
     </div>
     <div>
-    <div *ngIf="product.isauction" class="input">
+    <div *ngIf="isauction" class="input">
     <label>Step:</label>
     <input type="number" name='step' pattern="[0-9]*" [(ngModel)]="product.step">
     <div *ngIf="step.errors && (step.dirty || step.touched)" class="alert alert-danger">

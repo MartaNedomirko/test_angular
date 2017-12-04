@@ -4,6 +4,7 @@ let port= 8000;
 
 let bodyParser = require('body-parser');
 let mongoose = require('mongoose');
+let stripe=require('stripe')('sk_test_BQokikJOvBiI2HlWgH4olfQ2');
 let router = require('./app/routes/api.js');
 mongoose.connect('mongodb://localhost/product');
 app.use(function(req,res,next){

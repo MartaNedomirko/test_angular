@@ -22,14 +22,14 @@ exports.getOne = function(req,res){
 	});
 };
 exports.updateProduct=function(req,res){
-	Product.findOneAndUpdate({_id:req.param.id},req.body,function(err,product){
+	Product.findOneAndUpdate({_id:req.params.id},req.body,function(err,product){
 		if(err)
 			return res.status(400).send(err);
 		res.json(product);
 	});
 };
 exports.deleteProduct=function(req,res){
-	Product.remove({_id:req.param.id},function(err,product){
+	Product.remove({_id:req.params.id},function(err,product){
 		if(err)
 			return res.send(err);
 		res.json({message:'Product has been successfully removed'});
@@ -44,15 +44,13 @@ function cryptPass(password,callback){
 	});
 };
 exports.createProduct=function(req,res){
-	cryptPass(req.body.password,function(err,password){
-		if(err) return req.send(err);
-		var productData=req.body;
-		productData.password=password;
-		var newProduct=new Product(productData);
-		newProduct.save(function(err,product){
-			if(err)
-				return res.send(err);
-			res.send(product);
-		});
-	});
+	if(!req.body) return res.sendStatus(400);
+	var productData=req.body;
+	var newProduct=new Product(productData);
+	newProduct.save(function(err,product){
+		if(err)
+			return res.send(err);
+		res.send(product);
+	
+});
 };
