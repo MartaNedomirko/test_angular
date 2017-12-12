@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { Router } from '@angular/router';
 import {DatePickerComponent} from 'ng2-date-picker';
 import {HttpClient } from '@angular/common/http';
@@ -11,12 +11,15 @@ import {UserService} from '../../user/user.service';
   styleUrls: ['./steps.component.scss']
 })
 export class StepsComponent implements OnInit {
+
+@Input() updateproduct:object;
   public step1saved=false;
   public step2saved=false;
   public step3saved=false;
   public isauction='';
   public step=1;
   public product: object={
+	_id:'',
   	image:'',
   	title: '',
 	description:'',
@@ -39,6 +42,7 @@ constructor(private http:HttpClient,private userService:UserService, private rou
 
 API_URL='http://localhost:8000/app/v1/product';
 ngOnInit() {
+	this.product=this.updateproduct ? this.updateproduct : {};
 }
 
 gotoPage(isNext){
@@ -50,7 +54,8 @@ this.step++;
 this.product = product;
 this.step1saved=true;
 }
-savedetails(product: object)
+
+saveprofile(product: object)
 {
 this.step++;
 this.product = product;

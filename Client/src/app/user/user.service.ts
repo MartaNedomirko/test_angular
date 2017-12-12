@@ -2,9 +2,11 @@ import { Injectable } from '@angular/core';
 import {HttpClient } from '@angular/common/http';
 import {Observable } from 'rxjs/Observable';
 import {Subject } from 'rxjs';
-
 const USER_DATA_URL='http://localhost:8000/app/v1/product';
+const PAYMENT_URL='http://localhost:8000/app/v1/stripe';
 @Injectable()
+
+
 
 export class UserService {
 
@@ -52,6 +54,9 @@ constructor(private http:HttpClient) {
   }
   updateUser(product){
     this.http.put(USER_DATA_URL+'/'+product["_id"],product).subscribe(product=>console.log(product));
+  }
+  pay(payment){
+       return this.http.post(PAYMENT_URL,payment).subscribe((payment)=>console.log(payment));
   }
   
 }
